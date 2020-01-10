@@ -1,28 +1,31 @@
 <template>
-  <div class="home">
-    <Navbar></Navbar>
-    <!-- <div class="body">
-      <h1>OKAY BUDDY</h1>
+  <div>
+    <div class="home">
+      <Navbar></Navbar>
+      <div class="body">
+              <Card></Card>
+      </div>
     </div>
-    <Timeline></Timeline> -->
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Navbar from "@/components/Navbar.vue"
+import Navbar from "@/components/Navbar.vue";
+import Card from "@/components/Card.vue";
 // import Timeline from '@/components/Timeline.vue'
 
 export default {
   name: "home",
   components: {
-    Navbar
+    Navbar,
+    Card
   }
 };
 </script>
 
 <style scoped>
-  .body{
-    text-align: center;
-  }
+.body {
+  text-align: center;
+}
 </style>

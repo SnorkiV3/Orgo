@@ -1,7 +1,7 @@
 <template>
-  <v-content>
-    <Home></Home>
-  </v-content>
+    <div id="app">
+          <Home></Home>
+    </div>
 </template>
 
 <script>
@@ -17,12 +17,21 @@ export default {
   },
 
   data: () => ({
-        bars: [
-      { class: '' },
-      { class: '', dark: true },
-      { class: 'primary', dark: true },
-      { class: 'elevation-0' },
-    ],
+
   }),
 };
 </script>
+
+<style>
+  #app {
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url("assets/forestsketch.jpg");
+    z-index: -1;
+  }
+</style>
