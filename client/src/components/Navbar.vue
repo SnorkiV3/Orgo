@@ -17,13 +17,14 @@
         </div>
       <div class="navigation-link">
         <button class="btn btn-outline-light homeBtn">
-          <i class="fas fa-home"></i>
+          <i class="fas fa-plus"></i>
+        </button>
+        
+        <button class="btn btn-outline-light homeBtn">
+          <i class="far fa-bell"></i>
         </button>
         <button class="btn btn-outline-light homeBtn">
-          <i class="fas fa-home"></i>
-        </button>
-        <button class="btn btn-outline-light homeBtn">
-          <i class="fas fa-home"></i>
+          <i class="far fa-user"></i>
         </button>
       </div>
     </div>
@@ -38,7 +39,11 @@ export default {
 
 <style scoped>
 #navigation-main{
-  background: rgba(25, 25, 25, .7)
+  background: rgba(25, 25, 25, .7);
+  position: relative;
+  display: block;
+  overflow-y: auto;
+  z-index: 1;
 }
 brand-img{
   transition:  0.3;
@@ -51,6 +56,7 @@ brand-img{
   display: flex;
   /* flex-direction: row; */
   text-align: center;
+  position: relative;
 }
 .brand{
   flex: 3;

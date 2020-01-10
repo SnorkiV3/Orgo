@@ -2,8 +2,11 @@
   <div>
     <div class="home">
       <Navbar></Navbar>
-      <div class="body">
-              <Card></Card>
+
+      <div class="board">
+        <div class="list-wrapper">
+          <Card></Card>
+        </div>
       </div>
     </div>
   </div>
@@ -25,6 +28,26 @@ export default {
 </script>
 
 <style scoped>
+.board{
+  position: absolute;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 4rem;  
+}
+
+.list-wrapper {
+    width: 272px;
+    margin: 0 4px;
+    height: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+}
 .body {
   text-align: center;
 }

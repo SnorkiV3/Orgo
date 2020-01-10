@@ -24,14 +24,13 @@ export default {
 
 <style>
   #app {
+    overflow-y: hidden;
     position: absolute;
-    height: 100%;
     margin: 0;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
     background: url("assets/forestsketch.jpg");
-    z-index: -1;
   }
 </style>
