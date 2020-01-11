@@ -1,11 +1,10 @@
 <template>
-    <div id="app">
-          <Home></Home>
+    <div>
+          <router-view></router-view>
     </div>
 </template>
 
 <script>
-import Home from '@/views/Home.vue'
 window.$ = require('jquery')
 window.JQuery = require('jquery')
 
@@ -13,7 +12,6 @@ export default {
   name: 'App',
 
   components: {
-    Home
   },
 
   data: () => ({
@@ -22,7 +20,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
   #app {
     overflow-y: hidden;
     position: absolute;
