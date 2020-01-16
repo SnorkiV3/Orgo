@@ -15,10 +15,6 @@ export default {
   components: {
     Home
   },
-
-  data: () => ({
-
-  }),
 };
 </script>
 
