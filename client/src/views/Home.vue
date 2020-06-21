@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <div class="home">
       <Navbar></Navbar>
 
@@ -8,6 +8,7 @@
           <Card></Card>
         </div>
       </div>
+
     </div>
   </div>
 </template>
@@ -28,7 +29,18 @@ export default {
 </script>
 
 <style scoped>
-.board{
+
+  #app {
+    overflow-y: hidden;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url("../assets/forestsketch.jpg");
+  }
+.board {
   position: absolute;
   white-space: nowrap;
   overflow-x: auto;
@@ -36,17 +48,17 @@ export default {
   bottom: 0;
   right: 0;
   left: 0;
-  top: 4rem;  
+  top: 4rem;
 }
 
 .list-wrapper {
-    width: 272px;
-    margin: 0 4px;
-    height: 100%;
-    box-sizing: border-box;
-    display: inline-block;
-    vertical-align: top;
-    white-space: nowrap;
+  width: 272px;
+  margin: 0 4px;
+  height: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
 }
 .body {
   text-align: center;

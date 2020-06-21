@@ -23,9 +23,12 @@
         <button class="btn btn-outline-light homeBtn">
           <i class="far fa-bell"></i>
         </button>
-        <button class="btn btn-outline-light homeBtn">
+
+      <router-link :to="{name: 'signUp'}">
+        <button :to="{name: 'signUp'}" class="btn btn-outline-light homeBtn">
           <i class="far fa-user"></i>
         </button>
+      </router-link>
       </div>
     </div>
   </div>
